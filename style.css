@@ -18,11 +18,132 @@
     margin: 0;
 }
 
+
 body {
+    background: var(--cream);
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+.container  {
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container .header {
+    background: var(--soft-red);
+    color: var(--cream);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 20px;
+}
+
+.container .header .balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.container .main {
+    background: var(--very-pale-orange);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.container .main .spending {
+    border-bottom: solid 2px var(--cream);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .main .spending .bar-chart ul {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style-type: none;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container .main .spending .bar-chart ul li {
+    flex: 1;
+    gap: 10px;
+    color: var(--medium-brown);
+}
+
+.container .main .spending .bar-chart ul .bar {
+    background-color: var(--soft-red);
+    border-radius: 5px;
+}
+
+.container .main .spending .bar-chart ul .mon .bar {
+    height: 30px;
+}   
+
+.container .main .spending .bar-chart ul .thu .bar {
+    height: 60px;
+}
+
+.container .main .spending .bar-chart ul  .wed .bar {
+    height: 80px;
+    background-color: var(--cyan);
+}
+
+.container .main .spending .bar-chart ul .tue .bar {
+    height: 40px;
+}
+
+.container .main .spending .bar-chart ul .fri .bar {
+    height: 80px;
+}
+
+.container .main .spending .bar-chart ul .sat .bar {
+    height: 20px;
+}
+
+.container .main  .spending .bar-chart ul .sun .bar {
+    height: 10px;
+}
+
+.main .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.main .total .this-month small {
+    color: var(--medium-brown);
+}
+
+.main .total .last-month {
+    margin-bottom: 7px;
+}
+
+.main .total .last-month p {
+    text-align: right;
+    font-size: 15px;
+}
+
+.main .total .last-month p {
+    font-weight: 700;
+}
+
+.main .total .last-month small {
+    color: var(--medium-brown);
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
