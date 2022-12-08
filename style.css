@@ -31,6 +31,7 @@ body {
 
 .container  {
     min-width: 30%;
+    margin: 0 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -53,6 +54,10 @@ body {
     gap: 8px;
 }
 
+.container .header img {
+    width: 50px;
+}
+
 .container .main {
     background: var(--very-pale-orange);
     border-radius: 15px;
@@ -67,54 +72,34 @@ body {
     justify-content: space-between;
 }
 
-.container .main .spending .bar-chart ul {
+.container .main .spending .bar-chart-list {
     display: flex; 
-    justify-content: space-between;
-    align-items: flex-end;
     list-style-type: none;
     text-align: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.container .main .spending .bar-chart ul li {
+.container .main .spending  .bar-chart-list .list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
     flex: 1;
-    gap: 10px;
-    color: var(--medium-brown);
 }
 
-.container .main .spending .bar-chart ul .bar {
-    background-color: var(--soft-red);
+.container .main .spending .bar-chart-list .list-item span {
+    padding: 7px;
+    font-size: 12px;
+    /* font-size: 16px; */
+    background-color: var(--dark-brown);
+    color: var(--cream);
     border-radius: 5px;
 }
-
-.container .main .spending .bar-chart ul .mon .bar {
-    height: 30px;
-}   
-
-.container .main .spending .bar-chart ul .thu .bar {
-    height: 60px;
-}
-
-.container .main .spending .bar-chart ul  .wed .bar {
-    height: 80px;
-    background-color: var(--cyan);
-}
-
-.container .main .spending .bar-chart ul .tue .bar {
-    height: 40px;
-}
-
-.container .main .spending .bar-chart ul .fri .bar {
-    height: 80px;
-}
-
-.container .main .spending .bar-chart ul .sat .bar {
-    height: 20px;
-}
-
-.container .main  .spending .bar-chart ul .sun .bar {
-    height: 10px;
+.container .main .spending .bar-chart-list .bar {
+    background-color: var(--soft-red);
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .main .total {
@@ -148,3 +133,20 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .container .main .spending .bar-chart-list .list-item span {
+        padding: 5px;
+        font-size: 9px;
+    }
+
+    .main .total .this-month h1 {
+        font-size: 25px;
+    }
+}
