@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/muskatla14/expenses-chart-component-main)
-- Live Site URL: [](https://muskatla14.github.io/expenses-chart-component-main/)
+- Solution URL: [https://github.com/muskatla14/expenses-chart-component-main](https://github.com/muskatla14/expenses-chart-component-main)
+- Live Site URL: [https://muskatla14.github.io/expenses-chart-component-main/](https://muskatla14.github.io/expenses-chart-component-main/)
 
 ## My process
 
